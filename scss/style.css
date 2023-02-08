@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  width: 310px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0.3;
+  transition: opacity 0.5s;
+}
+
+.nav:hover {
+  opacity: 1;
+}
+
+.clr {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 3px solid rgb(214, 214, 214);
+  transition: transform 0.5s;
+}
+.clr .clr:hover {
+  transform: scale(1.2);
+}
+
+.clr:nth-child(1) {
+  background-color: black;
+}
+
+.clr:nth-child(2) {
+  background-color: red;
+}
+
+.clr:nth-child(3) {
+  background-color: yellow;
+}
+
+.clr:nth-child(4) {
+  background-color: lightblue;
+}
+
+.clr:nth-child(5) {
+  background-color: purple;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 0.6em 1em;
+  border-radius: 3px;
+  background-color: #03bb56;
+  color: #fff;
+}
+button .save {
+  background-color: #0f65d4;
+}/*# sourceMappingURL=style.css.map */

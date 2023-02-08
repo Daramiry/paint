@@ -1,14 +1,12 @@
-This webiste will be a representation of a paint shop,
-where users will either log in or browse our selection of paint,
-if logged in they can choose to set up a meeting to discuss pricing and time it will take for the car to be done. To log in user will need to create an account with a user name and password. This website will contain a wide variaty of paint.
+this is a class project
 
-This WEBSITE will contain the following pages in its code
+this application is a version of paint. users can log in and create drawings users will be able to save drawings and download them
 
--Home
--Checkout
--login 
--signup
--404 error
--appointment set up
--location
--contact us
+Page will contain:
+
+-login page
+-sign up page
+-about us page
+-report issues
+-information
+-404

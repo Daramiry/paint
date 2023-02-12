@@ -3,23 +3,24 @@
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "mongoose": "^6.9.1",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "react": "^18.2.0"
   },
   "name": "shop",
   "description": "this is a class project",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Daramiry/shop.git"
+    "url": "git+https://github.com/Daramiry/paint.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Daramiry/shop/issues"
+    "url": "https://github.com/Daramiry/paint/issues"
   },
-  "homepage": "https://github.com/Daramiry/shop#readme"
+  "homepage": "https://github.com/Daramiry/paint#readme"
 }

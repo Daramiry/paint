@@ -58,6 +58,6 @@ app.post("/Signup", async(req, res) =>{
     }
 })
 
-app.listen(3000,() => {
+app.listen(3000 , () => {
     console.log('connected to port 3000')
 })

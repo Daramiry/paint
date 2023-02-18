@@ -3,6 +3,20 @@
   padding: 0;
 }
 
+.greeting {
+  font-family: "Mynerve", cursive;
+  position: absolute;
+  display: flex;
+  opacity: 0.3;
+  transition: 0.5s;
+  justify-content: space-around;
+  left: 5%;
+}
+
+.greeting:hover {
+  opacity: 1;
+}
+
 .nav {
   width: 310px;
   height: 50px;
@@ -51,6 +65,11 @@
 
 .clr:nth-child(5) {
   background-color: purple;
+}
+
+.canvas {
+  height: 50rem;
+  width: 50rem;
 }
 
 button {

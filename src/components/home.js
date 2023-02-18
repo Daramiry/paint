@@ -8,6 +8,7 @@ function Home () {
         <div className="homepage">
             <h1> Hello {location.state.id} </h1>
         </div>
+        
     )
 }
 

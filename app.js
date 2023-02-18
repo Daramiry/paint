@@ -9,16 +9,16 @@ app.use(express.urlencoded({ extended: true}))
 app.use(cors())
 
 
-// app.get("/", cors(), (req, res) =>{
+app.get("/", cors(), (req, res) =>{
 
 
-// })
+})
 
 app.post("/", async(req, res) =>{
     const {email, password} = req.body
 
     try{
-        const check = await collectionfindOne({email:email})
+        const check = await collectionfindOne({email:email, password:password})
 
         if(check){
             res.json("exist")
@@ -37,20 +37,21 @@ app.post("/Signup", async(req, res) =>{
     const {email, password} = req.body
 
     const data = {
-        email:email,
-        password:password
+     email: email,
+     password: password
     }
 
     try{
         const check = await collectionfindOne({email:email})
 
         if(check){
-            res.json("exist")
-            await collection.insertMany([data])
+            res.json("notexist")
+            await collection.insertMany(['data'])
 
         }
         else{
-            res.json("notexist")
+            res.json("exist")
+            
         }
     }
     catch(e){

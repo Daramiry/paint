@@ -53,7 +53,7 @@ function Login() {
 
             <Link className="link" to="/Signup">Sign up Here</Link>
             <br/>
-            <Link className="link" to="/Home">Paint now</Link>
+            
         </div>
     )
 }

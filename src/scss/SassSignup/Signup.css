@@ -16,6 +16,7 @@ h1 {
 form {
   top: 15px;
   position: relative;
+  font-family: "Mynerve", cursive;
 }
 form .submit {
   font-family: "Mynerve", cursive;
@@ -23,8 +24,10 @@ form .submit {
   height: 40px;
   width: 80px;
   display: block;
+  font-size: large;
 }
 form .email {
+  justify-content: space-between;
   margin: 5px;
   display: block;
   height: 30px;
@@ -42,6 +45,21 @@ form .email {
   font-family: "Mynerve", cursive;
 }
 
-.password, .email, .submit {
-  border-radius: 40px, 40px, 40px, 40px;
+.break {
+  color: #dd3147;
+  font-family: "Mynerve", cursive;
+  font-size: 40px;
+  font-weight: 100%;
+}
+
+.link {
+  padding: 5px;
+  display: flex;
+  font-family: "Mynerve", cursive;
+  font-size: larger;
+  color: #dd3147;
+}
+
+.link:hover {
+  color: #343463;
 }/*# sourceMappingURL=Signup.css.map */

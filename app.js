@@ -9,12 +9,12 @@ app.use(express.urlencoded({ extended: true}))
 app.use(cors())
 
 
-app.get("/", cors(), (req, res) =>{
+app.get("/Home", cors(), (req, res) =>{
 
 
 })
 
-app.post("/", async(req, res) =>{
+app.post("/Login", async(req, res) =>{
     const {email, password} = req.body
 
     try{

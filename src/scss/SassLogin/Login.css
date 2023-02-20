@@ -27,6 +27,7 @@ form .submit {
   font-size: large;
 }
 form .email {
+  justify-content: space-between;
   margin: 5px;
   display: block;
   height: 30px;
@@ -49,4 +50,16 @@ form .email {
   font-family: "Mynerve", cursive;
   font-size: 40px;
   font-weight: 100%;
+}
+
+.link {
+  padding: 5px;
+  display: flex;
+  font-family: "Mynerve", cursive;
+  font-size: larger;
+  color: #dd3147;
+}
+
+.link:hover {
+  color: #343463;
 }/*# sourceMappingURL=Login.css.map */

@@ -5,6 +5,7 @@ $secondary-color: #c19aa3;
 $background: #f0ebdf;
 $filler-color: #f0f2e0;
 $fonts: 'Mynerve', cursive;
+
 * {
     background-color: $background;
     margin: 0;
@@ -23,15 +24,17 @@ h1 {
 form {
     top: 15px;
     position: relative;
+    font-family: $fonts;
     .submit {
         font-family: $fonts;
         color: $primary-color;
         height: 40px;
         width: 80px;
         display: block;
+        font-size: large;
     }
     .email {
-        // justify-content: space-around;
+        justify-content: space-between;
         margin: 5px;
         display: block;
         height: 30px;
@@ -39,7 +42,6 @@ form {
         font-size: 20px;
         font-family: $fonts;
     }
-    
 }
 .password {
     margin: 5px;
@@ -50,19 +52,20 @@ form {
     font-family: $fonts;
     
 }
-.password,.email,.submit{
-        border-radius: 40px, 40px,40px, 40px;
+.break {
+    color: $primary-color;
+    font-family: $fonts;
+    font-size: 40px;
+    font-weight: 100%;
+}
+.link {
+    padding: 5px;
+    display: flex;
+    font-family: $fonts;
+    font-size:larger;
+    color: $primary-color;
+    
+}
+.link:hover {
+        color: $dark-color;
     }
-
-
-
-       
-//     }
-// .password{
-//             display:flex;
-//             justify-content: space-between;
-//             position: absolute;
-//     }
-// .submit {
-//     position: absolute;
-// }

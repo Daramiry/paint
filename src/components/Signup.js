@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import axios from "axios"
 import { useNavigate, Link } from "react-router-dom"
-import "../scss/SassSignup/Signup.css"
+// import "../scss/SassSignup/Signup.css"
 
 function Signup() {
 
@@ -42,9 +42,9 @@ function Signup() {
 
             <form action="POST">
                 <input className="email" type="text" onChange = {(e) => { setEmail(e.target.value)}} placeholder="Email" name="" id="" />
-                <br/>
+                {/* <br/> */}
                 <input className="password" type="text" onChange = {(e) => { setPassword(e.target.value)}} placeholder="Password" name="" id="" />
-                <br/>
+                {/* <br/> */}
                 <input className="submit" type="submit" onClick={submit}/>
 
             </form>
@@ -53,11 +53,11 @@ function Signup() {
             <p className="break">OR</p>
             <br/>
 
-            <Link className="Login-here" to="/">Login Here</Link>
+            <Link className="link" to="/">Login Here</Link>
 
             <br/>
 
-            <Link className="paint-now" to="/Home">Paint now</Link>
+            {/* <Link className="paint-now" to="/Home">Paint now</Link> */}
         </div>
     )
 }

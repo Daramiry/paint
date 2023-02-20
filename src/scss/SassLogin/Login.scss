@@ -34,7 +34,7 @@ form {
         font-size: large;
     }
     .email {
-        // justify-content: space-around;
+        justify-content: space-between;
         margin: 5px;
         display: block;
         height: 30px;
@@ -58,3 +58,14 @@ form {
     font-size: 40px;
     font-weight: 100%;
 }
+.link {
+    padding: 5px;
+    display: flex;
+    font-family: $fonts;
+    font-size:larger;
+    color: $primary-color;
+    
+}
+.link:hover {
+        color: $dark-color;
+    }

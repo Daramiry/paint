@@ -1,10 +1,10 @@
-
+$fonts: 'Mynerve', cursive;
 * {
     margin: 0;
     padding: 0;
   }
   .greeting{
-    font-family: 'Mynerve', cursive;
+    font-family: $fonts;
     position: absolute;
     // transform: translatex(%) ;
     display: flex;

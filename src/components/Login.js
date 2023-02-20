@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import axios from "axios"
 import { useNavigate, Link } from "react-router-dom"
+import "../scss/SassLogin/Login.css"
 
 function Login() {
 
@@ -16,10 +17,10 @@ function Login() {
                 email, password
             })
             .then(res => {
-                if(res.data == "exist"){
+                if(res.data === "exist"){
                     history("/home", {state:{id:email}})
                 }
-                else if (res.data == "notexist") {
+                else if (res.data === "notexist") {
                     alert("User is not signed up")
                 }
 
@@ -39,18 +40,20 @@ function Login() {
             <h1>Login</h1>
 
             <form action="POST">
-                <input type="text" onChange = {(e) => { setEmail(e.target.value)}} placeholder="Email"  />
-                <input type="text" onChange = {(e) => { setPassword(e.target.value)}} placeholder="Password"  />
+                <input className="email" type="text" onChange = {(e) => { setEmail(e.target.value)}} placeholder="Email"  />
+                <input className="password" type="text" onChange = {(e) => { setPassword(e.target.value)}} placeholder="Password"  />
 
-                <input type="submit" onClick={submit}/>
+                <input className="submit"type="submit" onClick={submit}/>
 
             </form>
 
             <br />
-            <p>OR</p>
+            <p className="break">OR</p>
             <br/>
 
-            <Link to="/Signup">Sign up Here</Link>
+            <Link className="link" to="/Signup">Sign up Here</Link>
+            <br/>
+            <Link className="link" to="/Home">Paint now</Link>
         </div>
     )
 }

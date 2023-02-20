@@ -1,0 +1,60 @@
+$dark-color: #343463;
+$light-color: #c19aa3;
+$primary-color: #dd3147;
+$secondary-color: #c19aa3;
+$background: #f0ebdf;
+$filler-color: #f0f2e0;
+$fonts: 'Mynerve', cursive;
+
+* {
+    background-color: $background;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: $fonts;
+    color: $primary-color;
+    margin: 5px;
+    position: relative;
+    justify-content: space-between;
+    display: block;
+    
+}
+form {
+    top: 15px;
+    position: relative;
+    font-family: $fonts;
+    .submit {
+        font-family: $fonts;
+        color: $primary-color;
+        height: 40px;
+        width: 80px;
+        display: block;
+        font-size: large;
+    }
+    .email {
+        // justify-content: space-around;
+        margin: 5px;
+        display: block;
+        height: 30px;
+        width: auto;
+        font-size: 20px;
+        font-family: $fonts;
+    }
+}
+.password {
+    margin: 5px;
+    display: block;
+    height: 30px;
+    width: auto;
+    font-size: 20px;
+    font-family: $fonts;
+    
+}
+.break {
+    color: $primary-color;
+    font-family: $fonts;
+    font-size: 40px;
+    font-weight: 100%;
+}

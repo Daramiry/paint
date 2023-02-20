@@ -1,0 +1,47 @@
+* {
+  background-color: #f0ebdf;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Mynerve", cursive;
+  color: #dd3147;
+  margin: 5px;
+  position: relative;
+  justify-content: space-between;
+  display: block;
+}
+
+form {
+  top: 15px;
+  position: relative;
+}
+form .submit {
+  font-family: "Mynerve", cursive;
+  color: #dd3147;
+  height: 40px;
+  width: 80px;
+  display: block;
+}
+form .email {
+  margin: 5px;
+  display: block;
+  height: 30px;
+  width: auto;
+  font-size: 20px;
+  font-family: "Mynerve", cursive;
+}
+
+.password {
+  margin: 5px;
+  display: block;
+  height: 30px;
+  width: auto;
+  font-size: 20px;
+  font-family: "Mynerve", cursive;
+}
+
+.password, .email, .submit {
+  border-radius: 40px, 40px, 40px, 40px;
+}/*# sourceMappingURL=Signup.css.map */

@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import axios from "axios"
 import { useNavigate, Link } from "react-router-dom"
+import "../scss/SassSignup/Signup.css"
 
 function Signup() {
 
@@ -16,10 +17,10 @@ function Signup() {
                 email, password
             })
             .then(res => {
-                if(res.data == "exist"){
+                if(res.data === "exist"){
                     alert("user already exist")
                 }
-                else if (res.data == "notexist") {
+                else if (res.data === "notexist") {
                 
                      history("/home", {state:{id:email}})
                 }
@@ -40,18 +41,23 @@ function Signup() {
             <h1>Sign Up</h1>
 
             <form action="POST">
-                <input type="text" onChange = {(e) => { setEmail(e.target.value)}} placeholder="Email" name="" id="" />
-                <input type="text" onChange = {(e) => { setPassword(e.target.value)}} placeholder="Password" name="" id="" />
-
-                <input type="submit" onClick={submit}/>
+                <input className="email" type="text" onChange = {(e) => { setEmail(e.target.value)}} placeholder="Email" name="" id="" />
+                <br/>
+                <input className="password" type="text" onChange = {(e) => { setPassword(e.target.value)}} placeholder="Password" name="" id="" />
+                <br/>
+                <input className="submit" type="submit" onClick={submit}/>
 
             </form>
 
             <br />
-            <p>OR</p>
+            <p className="break">OR</p>
             <br/>
 
-            <Link to="/">Login Here</Link>
+            <Link className="Login-here" to="/">Login Here</Link>
+
+            <br/>
+
+            <Link className="paint-now" to="/Home">Paint now</Link>
         </div>
     )
 }
